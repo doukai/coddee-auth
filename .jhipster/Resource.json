@@ -1,0 +1,48 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [
+    {
+      "relationshipName": "tenant",
+      "otherEntityName": "tenant",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": ["required"],
+      "otherEntityField": "id",
+      "otherEntityRelationshipName": "resource"
+    },
+    {
+      "relationshipName": "role",
+      "otherEntityName": "role",
+      "relationshipType": "many-to-many",
+      "ownerSide": false,
+      "otherEntityRelationshipName": "resource"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "url",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "method",
+      "fieldType": "MethodType",
+      "fieldValues": "GET,POST,PUT,PATCH,DELETE",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "resourceName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "changelogDate": "20201024040244",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "no",
+  "entityTableName": "resource",
+  "databaseType": "sql",
+  "readOnly": true,
+  "jpaMetamodelFiltering": false,
+  "pagination": "pagination"
+}

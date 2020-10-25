@@ -40,6 +40,7 @@
     "languages": ["zh-cn", "en"],
     "blueprints": [],
     "skipUserManagement": true,
-    "prettierJava": true
+    "prettierJava": true,
+    "lastLiquibaseTimestamp": 1603514062000
   }
 }

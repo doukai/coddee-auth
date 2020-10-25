@@ -42,6 +42,17 @@ public class CacheConfiguration {
     @Bean
     public JCacheManagerCustomizer cacheManagerCustomizer() {
         return cm -> {
+            createCache(cm, com.coddee.auth.domain.User.class.getName());
+            createCache(cm, com.coddee.auth.domain.Role.class.getName());
+            createCache(cm, com.coddee.auth.domain.Resource.class.getName());
+            createCache(cm, com.coddee.auth.domain.Organization.class.getName());
+            createCache(cm, com.coddee.auth.domain.Tenant.class.getName());
+            createCache(cm, com.coddee.auth.domain.Role.class.getName() + ".users");
+            createCache(cm, com.coddee.auth.domain.Role.class.getName() + ".resources");
+            createCache(cm, com.coddee.auth.domain.User.class.getName() + ".roles");
+            createCache(cm, com.coddee.auth.domain.Resource.class.getName() + ".roles");
+            createCache(cm, com.coddee.auth.domain.Role.class.getName() + ".roles");
+            createCache(cm, com.coddee.auth.domain.Role.class.getName() + ".parentRoles");
             // jhipster-needle-ehcache-add-entry
         };
     }

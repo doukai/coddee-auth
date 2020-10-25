@@ -1,31 +1,19 @@
+import { IRole } from 'app/shared/model/role.model';
+import { IOrganization } from 'app/shared/model/organization.model';
+import { ITenant } from 'app/shared/model/tenant.model';
+
 export interface IUser {
-  id?: any;
+  id?: number;
   login?: string;
-  firstName?: string;
-  lastName?: string;
-  email?: string;
-  activated?: boolean;
-  langKey?: string;
-  authorities?: any[];
-  createdBy?: string;
-  createdDate?: Date | null;
-  lastModifiedBy?: string;
-  lastModifiedDate?: Date | null;
   password?: string;
+  userName?: string;
+  activated?: boolean;
+  email?: string;
+  roles?: IRole[];
+  organization?: IOrganization;
+  tenant?: ITenant;
 }
 
 export const defaultValue: Readonly<IUser> = {
-  id: '',
-  login: '',
-  firstName: '',
-  lastName: '',
-  email: '',
-  activated: true,
-  langKey: '',
-  authorities: [],
-  createdBy: '',
-  createdDate: null,
-  lastModifiedBy: '',
-  lastModifiedDate: null,
-  password: '',
+  activated: false,
 };

@@ -1,0 +1,26 @@
+{
+  "coddeeApp": {
+    "resource": {
+      "home": {
+        "title": "Resources",
+        "createLabel": "创建新 Resource",
+        "createOrEditLabel": "创建或编辑 Resource",
+        "notFound": "No Resources found"
+      },
+      "created": "Resource {{ param }} 创建成功",
+      "updated": "Resource {{ param }} 更新成功",
+      "deleted": "Resource {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Resource {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Resource"
+      },
+      "url": "Url",
+      "method": "Method",
+      "resourceName": "Resource Name",
+      "tenant": "Tenant",
+      "role": "Role"
+    }
+  }
+}

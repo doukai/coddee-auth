@@ -1,0 +1,29 @@
+{
+  "coddeeApp": {
+    "user": {
+      "home": {
+        "title": "Users",
+        "createLabel": "Create a new User",
+        "createOrEditLabel": "Create or edit a User",
+        "notFound": "No Users found"
+      },
+      "created": "A new User is created with identifier {{ param }}",
+      "updated": "A User is updated with identifier {{ param }}",
+      "deleted": "A User is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete User {{ id }}?"
+      },
+      "detail": {
+        "title": "User"
+      },
+      "login": "Login",
+      "password": "Password",
+      "userName": "User Name",
+      "activated": "Activated",
+      "email": "Email",
+      "role": "Role",
+      "organization": "Organization",
+      "tenant": "Tenant"
+    }
+  }
+}

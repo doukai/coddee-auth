@@ -1,0 +1,25 @@
+{
+  "coddeeApp": {
+    "organization": {
+      "home": {
+        "title": "Organizations",
+        "createLabel": "创建新 Organization",
+        "createOrEditLabel": "创建或编辑 Organization",
+        "notFound": "No Organizations found"
+      },
+      "created": "Organization {{ param }} 创建成功",
+      "updated": "Organization {{ param }} 更新成功",
+      "deleted": "Organization {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Organization {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Organization"
+      },
+      "organizationCode": "Organization Code",
+      "organizationName": "Organization Name",
+      "parentOrganization": "Parent Organization",
+      "tenant": "Tenant"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "coddeeApp": {
+    "user": {
+      "home": {
+        "title": "Users",
+        "createLabel": "创建新 User",
+        "createOrEditLabel": "创建或编辑 User",
+        "notFound": "No Users found"
+      },
+      "created": "User {{ param }} 创建成功",
+      "updated": "User {{ param }} 更新成功",
+      "deleted": "User {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 User {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "User"
+      },
+      "login": "Login",
+      "password": "Password",
+      "userName": "User Name",
+      "activated": "Activated",
+      "email": "Email",
+      "role": "Role",
+      "organization": "Organization",
+      "tenant": "Tenant"
+    }
+  }
+}
